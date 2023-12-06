@@ -33,7 +33,7 @@ addProduct(001,"apple",500,12);
 addProduct(001,"apple",500,12);
 console.log(inventory);
 function toDeletedId(id) {
-inventory = inventory.filter(p => p.id !== id);
+inventory = inventory.filter(obj => obj.id !== id);
 }
 console.log(inventory);
 const index = inventory.findIndex(obj => {
