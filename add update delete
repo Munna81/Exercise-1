@@ -32,9 +32,9 @@ inventory.push(newProduct);
 addProduct(001,"apple",500,12);
 addProduct(001,"apple",500,12);
 console.log(inventory);
-
-
-delete inventory[4];
+function toDeletedId(id) {
+inventory = inventory.filter(p => p.id !== id);
+}
 console.log(inventory);
 const index = inventory.findIndex(obj => {
   return obj.id === 2;
