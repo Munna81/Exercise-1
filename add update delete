@@ -1,4 +1,4 @@
-    const inventory = [
+const inventory = [
  {
   id:001,
   name: "I phone",
@@ -40,7 +40,8 @@ const index = inventory.findIndex(obj => {
   return obj.id === 2;
 });
 console.log(index); 
- 
+ if (inventory){
   inventory[index].quantity = 500;
- 
+ }
 console.log(inventory);
+  
