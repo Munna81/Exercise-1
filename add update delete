@@ -58,3 +58,18 @@ employee1.email = updatedEmail !== undefined ? updatedEmail:employee1.email;
 employee1.address = updatedAddress !== undefined ? updatedAddress:employee1.address;
 }
 function toUpdatsEmoly(updatedEmail,UpdatedAddress) { console.log(updatedEmail,UpdatedAddress); } toUpdatsEmoly('mrmunna@gmail.com',"8/1 gopi kisan len road");
+
+
+
+let employee1 = {
+    
+    name:"mark",
+    userId:"mark002",
+    email:"munna.ahmed042@gmail.com",
+    address:
+         {street:["12 nabab street road"]},
+    }
+console.log(employee1.address);
+VM1847:9 {street: Array(1)}street: ['12 nabab street road'][[Prototype]]: Object
+undefined
+console.log(employee1.address.street);
