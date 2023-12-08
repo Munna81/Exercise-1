@@ -42,7 +42,7 @@ function toUpdatedElement(id, updatedQuantity) {
   updatedQuantity += inventory[index].quantity;
 }
  
-
+console.log(inventory);
 addProduct(007, 'munna', 420, 000)
 toDeletedId(003);
 toUpdatedElement(001, 400);
