@@ -70,8 +70,6 @@ let employee1 = {
          {street:["12 nabab street road"]},
     }
 console.log(employee1.address);
-VM1847:9 {street: Array(1)}street: ['12 nabab street road'][[Prototype]]: Object
-undefined
 console.log(employee1.address.street);
 
 
