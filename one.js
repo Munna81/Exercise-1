@@ -39,10 +39,9 @@ function toUpdatedElement(id, updatedQuantity) {
   const index = inventory.findIndex((arr) => arr.id == id)
   inventory[index].quantity =
     updatedQuantity !== undefined ? updatedQuantity : inventory[index].quantity
+  updatedQuantity += inventory[index].quantity;
 }
- function toNewQuantity(){
-   updatedQuantity += inventory[index].quantity;
- }   
+ 
 
 addProduct(007, 'munna', 420, 000)
 toDeletedId(003);
