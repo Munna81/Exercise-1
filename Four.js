@@ -15,7 +15,7 @@ let employee2 = {
     }
 
 
-const x = function toEqualOrNot(employee1,employee2){
+function toEqualOrNot(employee1,employee2){
 
 
  employee1 !== employee2 ? false:true;
