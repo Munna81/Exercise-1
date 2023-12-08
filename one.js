@@ -40,7 +40,9 @@ function toUpdatedElement(id, updatedQuantity) {
   inventory[index].quantity =
     updatedQuantity !== undefined ? updatedQuantity : inventory[index].quantity
 }
-console.log(inventory)
+ function toNewQuantity(){
+   updatedQuantity += inventory[index].quantity;
+ }   
 
 addProduct(007, 'munna', 420, 000)
 toDeletedId(003);
