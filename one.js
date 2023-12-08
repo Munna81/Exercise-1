@@ -38,7 +38,7 @@ function toDeletedId(id) {
 function toUpdatedElement(id, updatedQuantity,quantity) {
   const index = inventory.findIndex((arr) => arr.id == id)
   inventory[index].quantity =
-    updatedQuantity !== undefined ? updatedQuantity += inventory[index].quantity: inventory[index].quantity
+  updatedQuantity !== undefined ? updatedQuantity += inventory[index].quantity: inventory[index].quantity
     
 }
  
