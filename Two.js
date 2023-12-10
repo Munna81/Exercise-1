@@ -6,21 +6,22 @@ let employee1 = {
     address:"12 nabab street road",
     }
 
-function toUpdatsEmoly(updatedEmail,UpdatedAddress) {
+/*function toUpdatsEmoly(updatedEmail,UpdatedAddress) {
 employee1.email = updatedEmail !== undefined ? updatedEmail:employee1.email;
 employee1.address = updatedAddress !== undefined ? updatedAddress:employee1.address;
 }
 function toUpdatsEmoly(updatedEmail,UpdatedAddress) { console.log(updatedEmail,UpdatedAddress); } toUpdatsEmoly("mrmunna@gmail.com","8/1 gopi kisan len road");
+*/
 
-
-function toUpdate() =>{
-    if(updatedEmail){
-        employee1.email=updatedEmail
+function toUpdate(updateData) {
+    if(updateData.email){
+        employee1.email=updateData.email
     }
-    if(updatedAddress){
-        employee1.address=updatedAddress
+    if(updateData.address){
+        employee1.address=updateData.address
     }
 }
 
 
 toUpdate({email:"mrmunna196@gmail.com",address:"8/1 goppi kisan len road"})
+console.log(employee1);
