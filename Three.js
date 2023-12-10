@@ -7,4 +7,7 @@ let employee1 = {
          {street:["12 nabab street road"]},
     }
 
-console.log(employee1.address.street);
+function toFindStreet() {
+    return employee1.address.street
+}
+toFindStreet();
