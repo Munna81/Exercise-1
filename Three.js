@@ -16,9 +16,7 @@ for (let key in employee1) {
      for (let nestedKey in employee1[key]) {
        console.log(employee1[key][nestedKey]);
      }
-   } else {
-     console.log(employee1[key]);
-   }
+   } 
  }
 }
 console.log(employee1.address.building);
