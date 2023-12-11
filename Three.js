@@ -4,7 +4,7 @@ let employee1 = {
     userId:"mark002",
     email:"munna.ahmed042@gmail.com",
     address:
-         {street:["12 nabab street road"]},
+         {building: 'A26', street:["12 nabab street road"]},
     }
 
 /*function toFindStreet() {
@@ -21,4 +21,4 @@ for (let key in employee1) {
    }
  }
 }
-console.log(employee1.address.street);
+console.log(employee1.address.building);
