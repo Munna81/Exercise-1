@@ -10,13 +10,17 @@ let employee1 = {
 /*function toFindStreet() {
     return employee1.address.street
 }*/
-function toFindStreet() {
+function toFindStreet(building,street) {
 for (let key in employee1) {
    if (typeof employee1[key] === "object") {
      for (let nestedKey in employee1[key]) {
-       console.log(employee1[key][nestedKey]);
+       if(employee1[key][nestedKey]==="builing"){
+           return employee1.address.building
+       } else {
+          return employee1.address.street 
+       }
      }
    } 
  }
 }
-console.log(employee1.address.building);
+toFindStreet();
