@@ -12,7 +12,7 @@ let employee1 = {
 }*/
 function toFindStreet() {
 for (let key in employee1) {
-   if (typeof employee1[street] === "object") {
+   if (typeof employee1[key] === "object") {
      for (let nestedKey in employee1[key]) {
        console.log(employee1[key][nestedKey]);
      }
