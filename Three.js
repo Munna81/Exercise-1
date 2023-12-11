@@ -7,7 +7,17 @@ let employee1 = {
          {street:["12 nabab street road"]},
     }
 
-function toFindStreet() {
+/*function toFindStreet() {
     return employee1.address.street
-}
-toFindStreet();
+}*/
+for (let key in employee1) {
+   if (typeof employee1[key] === "object") {
+     for (let nestedKey in employee1[key]) {
+       console.log(employee1[key][nestedKey]);
+     }
+   } else {
+     console.log(employee1[key]);
+   }
+ }
+ 
+console.log(employee1.address.street);
