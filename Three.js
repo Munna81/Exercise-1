@@ -10,7 +10,7 @@ let employee1 = {
 /*function toFindStreet() {
     return employee1.address.street
 }*/
-function toFindStreet {
+function toFindStreet() {
 for (let key in employee1) {
    if (typeof employee1[key] === "object") {
      for (let nestedKey in employee1[key]) {
