@@ -7,7 +7,7 @@ let employee1 = {
          {building: 'A26', street:["12 nabab street road"]},
     }
 }
-undefined
+
 
 function getObjectValue(obj, path) {
   const properties = path.split('.');
