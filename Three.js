@@ -20,7 +20,7 @@ console.log(streetValue);
 
 
 
-
+/*
 
 
 /*let employee1 = {
@@ -68,7 +68,7 @@ const split = employee1.split(".")
 
 const actual = toGetvalue(employee1,"employee1.address.street");
 console.log(actual);*/
-function getObjectValue(obj, path) {
+/*function getObjectValue(obj, path) {
   const properties = path.split('.');
   return properties.reduce((currentObject, property) => {
     return currentObject ? currentObject[property] : undefined;
