@@ -75,7 +75,7 @@ console.log(actual);*/
   }, obj);
 }
 const streetValue = getObjectValue(employee1,"employee1.address.street")
-console.log(streetValue);
+console.log(streetValue);*/
 
 
 
