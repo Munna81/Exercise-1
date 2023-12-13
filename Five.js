@@ -1,8 +1,7 @@
 const data = {'faysal ahmed': 'A', 'Munna Dhali': 'A+'};
 
    function toTransform (data) {
-      const result = Object.entries(data)
-      return result.map(([key,value]) => {
+      const result = Object.entries(data).map(([key,value]) => {
          return {[key]: value };
       });
       return result;
