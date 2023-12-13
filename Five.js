@@ -1,47 +1,14 @@
-let student1 = {
-   user: {
-   name:"munna",
-   value:3.56
-   },
-   
-   user2:{
-   name:"kawser",
-   value:5,
-      },
+const student1 = {'faysal ahmed': 'A', 'Munna Dhali': 'A+'}
+
+
+  function toFind (nastedKey){
+     const value = nastedKey.split(".");
+     let result = student1;
+     value.forEach(i =>{
+        return result = result[i];
+     })
+     return result;
   }
-  function toFind (obj,path){
-   const value = path.split(".");
-   return value.reduce((currentObject,value) =>{
-      return currentObject ? currentObject[value] : undefined;
-   },obj)
-}
-
-const Number = toFind(student1,"user2")
-console.log(Number);
 
 
 
-
-
-/*let student1 = {
-   user: {
-   name:"munna",
-   value:3.56
-   },
-   
-   user2:{
-   name:"kawser",
-   value:5,
-      },
-  }
-  function toFind (obj,path){
-   const value = path.split(".");
-   return value.reduce((currentObject,value) =>{
-      return currentObject ? currentObject[value] : undefined;
-   },obj)
-}
-
-const Number = toFind(student1,"user.value")
-console.log(Number);
-
-*/
