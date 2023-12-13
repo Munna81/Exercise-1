@@ -1,7 +1,14 @@
 const data = {'faysal ahmed': 'A', 'Munna Dhali': 'A+'}
 
-   function toFind(name,grade){
-    const student = object.keys(data)
+   function toFind(keys,value){
+    const Ente = object.keys(data)
+           
+       return Ente.map(([key,value]) => {
+            return ( {key}, {value} )
+                  
+          });
+        })}
+
    }     
 toFind(data);
 
