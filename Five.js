@@ -1,12 +1,13 @@
-const data = {'faysal ahmed': 'A', 'Munna Dhali': 'A+'}
+const data = {'faysal ahmed': 'A', 'Munna Dhali': 'A+'};
 
-   function toTransform (keys,value) {
-      const Ente = object.keys(data)
-      return Ente.map(([key,value]) => {
-         return ({key}{value})
-      }
+   function toTransform (data) {
+      const result = Object.entries(data)
+      return result.map(([key,value]) => {
+         return {[key]: value };
+      });
+      return result;
    }
-toFind(data);
+toTransform(data);
 
   /*function toFind (nastedKey){
      const value = nastedKey.split(".");
