@@ -1,8 +1,7 @@
 const data = {'faysal ahmed': 'A', 'Munna Dhali': 'A+'}
 
    function toFind(name,grade){
-    return  object.keys(data).map(([name,grade]) =>                                  
-       ({ name, grade }))
+    const student = object.keys(data)
    }     
 toFind(data);
 
