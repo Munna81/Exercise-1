@@ -1,15 +1,11 @@
 const data = {'faysal ahmed': 'A', 'Munna Dhali': 'A+'}
 
-   function toFind(keys,value){
-    const Ente = object.keys(data)
-           
-       return Ente.map(([key,value]) => {
-            return ( {key}, {value} )
-                  
-          });
-        })}
-
-   }     
+   function toTransform (keys,value) {
+      const Ente = object.keys(data)
+      return Ente.map(([key,value]) => {
+         return ({key}{value})
+      }
+   }
 toFind(data);
 
   /*function toFind (nastedKey){
