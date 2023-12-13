@@ -1,11 +1,10 @@
 const data = {'faysal ahmed': 'A', 'Munna Dhali': 'A+'}
 
    function toFind(name,grade){
-    object.entries(data).map(([name,grade]) => ({
-      name,grade 
-    }))
+    return  object.keys(data).map(([name,grade]) =>                                  
+       ({ name, grade }))
    }     
-toFind();
+toFind(data);
 
   /*function toFind (nastedKey){
      const value = nastedKey.split(".");
