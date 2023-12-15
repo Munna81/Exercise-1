@@ -5,7 +5,7 @@ function event (id,title,date,time,attendess){
   this.time = time;
   this.attendess = attendess;
 }
-function calendar ()  {
+function Calendar ()  {
 this.events = [];
 this.addEvent = function (event){
   this.events.push(event);
@@ -21,5 +21,5 @@ const event1 = new Event(1,"meeting","2023-11-27","06:00","Faysal")
 const event2 = new Event(2,"Gossiping","2023-11-27","09:00","Sayham")
 myCalendar.addEvent(event1);
 myCalendar.addEvent(event2);
-console.log(myCalendar.addEvent(event));
+console.log(eventsOnDate);
 const eventsOnDate = myCalendar.getEventsOnDate("2023-11-27");
