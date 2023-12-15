@@ -1,4 +1,4 @@
-function event (id,title,date,time,attendess){
+function Event (id,title,date,time,attendess){
   this.id = id;
   this.title = title;
   this.date = date;
