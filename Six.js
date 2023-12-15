@@ -12,6 +12,6 @@ this.addEvent = function (event){
 const myCalendar = new Calendar();
 const event1 = new event (1,"meeting","27-11-2023","06:00","Faysal")
 const event2 = new event (2,"Gossiping","27-11-2023","09:00","Sayham")
-myCalender.addEvent(event1);
-myCalender.addEvent(event2);
-console.log(myCalender.addEvent(event));
+myCalendar.addEvent(event1);
+myCalendar.addEvent(event2);
+console.log(myCalendar.addEvent(event));
