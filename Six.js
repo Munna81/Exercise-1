@@ -10,10 +10,16 @@ this.event = [];
 this.addEvent = function (event){
   this.events.push(event);
 }
+  this.getEventsOnDate = function (date) {
+    const eventsOnDate = this.events.filter(event => event.date === date);
+    return eventsOnDate;
+  };
 }
+
 const myCalendar = new Calendar();
-const event1 = new event (1,"meeting","27-11-2023","06:00","Faysal")
-const event2 = new event (2,"Gossiping","27-11-2023","09:00","Sayham")
+const event1 = new event (1,"meeting","2023-11-27","06:00","Faysal")
+const event2 = new event (2,"Gossiping","2023-11-27","09:00","Sayham")
 myCalendar.addEvent(event1);
 myCalendar.addEvent(event2);
 console.log(myCalendar.addEvent(event));
+const eventsOnDate = myCalendar.getEventsOnDate("2023-11-27");
