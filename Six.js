@@ -1,7 +1,7 @@
-let myCalendar = [];
+let eventCalendar = [];
 
 function addEvents (evenId,title,date,time,attendess){
   let newEvent = {evenId,title,date,time,attendess};
-   myCalendar.push(newEvent);
+   eventCalendar.push(newEvent);
 } 
 addEvents();
