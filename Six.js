@@ -13,9 +13,9 @@ function updateEvent (evenId,updatedinfo){
   }
 }
 function deleteEvent(evenId){
- let eventCalendar = eventCalendar.find(item => item.evenId === evenId);
+ let event = eventCalendar.find(item => item.evenId === evenId);
    if(event){
-    delete eventCalendar.attendess
+    Object.assign(event,deletedinfo)
   }
 } 
 
