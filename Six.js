@@ -13,10 +13,8 @@ function updateEvent (evenId,updatedinfo){
   }
 }
 function deleteEvent(evenId){
- let event = eventCalendar.find(item => item.evenId === evenId);
-   if(event){
-    Object.assign(event,deletedinfo)
-  }
+ let event = eventCalendar.find(item => item.evenId !== evenId);
+   delete eventCalendar.evenId
 } 
 
 updateEvent(1,{title:"meeting with y"})
